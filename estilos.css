@@ -1,0 +1,78 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu {
+    background-color: #444;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Query para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 600px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Media Query para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        padding: 40px;
+    }
+}
+
+/* Media Query para impresión */
+@media print {
+    .menu {
+        display: none; /* Ocultar el menú al imprimir */
+    }
+
+    header, footer {
+        color: black;
+        background-color: white;
+    }
+
+    main {
+        font-size: 12pt;
+    }
+}
